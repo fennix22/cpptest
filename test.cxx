@@ -1,10 +1,17 @@
 #include <iostream>
 #include <string>
-#include <vector>
+#include <map>
+#include <algorithm>
 
 int main()
 {
-	std::vector<int> xs{1,2,3};
-	for (auto x: xs)
-		std::cout << x << std::endl;
+	std::map<std::string, int> freq_tbl;
+	std::string temp;
+	while (std::cin >> temp) {
+		freq_tbl[temp]++;
+	}
+
+	for (auto& p : freq_tbl) {
+		std::cout << p.first << ": " << p.second << std::endl;
+	}
 }
