@@ -3,8 +3,7 @@
 
 int main()
 {
-	using namespace std;
-	vector<int> xs{1,2,3};
+	std::vector<int> xs{1,2,3};
 	for (auto x: xs)
-		cout << x << endl;
+		std::cout << x << std::endl;
 }
