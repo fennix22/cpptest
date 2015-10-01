@@ -1,6 +1,10 @@
 #include <iostream>
+#include <string>
 
 int main()
 {
-	std::cout << "Hello world!" << std::endl;
+	using namespace std;
+	vector<int> xs{1,2,3};
+	for (auto x: xs)
+		cout << x << endl;
 }
